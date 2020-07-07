@@ -16,6 +16,10 @@ body, html {
     font-weight: bold; /* optional */
 }
 
+.container h1 {
+    font-size: 40px; /* replace with desired font size for title */
+}
+
 .text {
     color: black; /* replace "black" with your desired text color for description */
     font-family: sans-serif; /* replace with your desired font for description */

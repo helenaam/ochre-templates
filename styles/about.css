@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+}
+
+.title {
+    margin-top: 51px;
+    background-color: green; /* put desired background color here */
+    /* To use a background image instead of a solid color, uncomment the next line */
+    /* background-image: <path to image goes here>; */
+    color: white; /* put desired text color here */
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* font-size: 48px; */
+}
+
+.title h1 {
+    font-size: 48px;
+}
+
+/* settings that only apply to screen size small or bigger */
+@media (min-width: 576px) {
+}
+
+/* settings that only apply to screen size medium or bigger */
+@media (min-width: 768px) {
+}
+
+/* settings that only apply to screen size large or bigger */
+@media (min-width: 992px) {
+    
+}
+
+/* settings that only apply to screen size xl or bigger */
+@media (min-width: 1200px) {
+
+}
