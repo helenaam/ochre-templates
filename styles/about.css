@@ -18,6 +18,39 @@ body, html {
     font-size: 48px;
 }
 
+.bg {
+    padding-top: 20px;
+    background-color: white; /* replace this with desired background color for body of page */
+}
+
+.col-xs-4 {
+    
+}
+
+.col-xs-8 {
+    
+}
+
+.col-xs-8 p {
+    font-size: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+img {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 85%;
+    height: auto;
+}
+
 /* settings that only apply to screen size small or bigger */
 @media (min-width: 576px) {
 }
