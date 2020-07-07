@@ -2,10 +2,52 @@ body, html {
     height: 100%;
 }
 
-.bg {
-    background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=be09010f-c16a-43c2-9632-e95c27e82d0d&image"); /* replace this with image for your project */
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* .bg { */
+/*     background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=be09010f-c16a-43c2-9632-e95c27e82d0d&image"); /\* replace this with image for your project *\/ */
+/*     height: 100%; */
+/*     background-position: center; */
+/*     background-repeat: no-repeat; */
+/*     background-size: cover; */
+/* } */
+
+@include media-breakpoint-up(xs) {
+    .bg {
+	background-color: blue;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .bg {
+	background-color: blue;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .bg {
+	background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=be09010f-c16a-43c2-9632-e95c27e82d0d&image"); /* replace this with image for your project */
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .bg {
+	background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=be09010f-c16a-43c2-9632-e95c27e82d0d&image"); /* replace this with image for your project */
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .bg {
+	background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=be09010f-c16a-43c2-9632-e95c27e82d0d&image"); /* replace this with image for your project */
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    }
 }
