@@ -4,9 +4,8 @@ body, html {
 
 .title {
     margin-top: 51px;
-    background-color: green; /* put desired background color here */
-    /* To use a background image instead of a solid color, uncomment the next line */
-    /* background-image: <path to image goes here>; */
+    background-image: url("../assets/image2.jpg"); /* replace ../assets/image2.jpg with path to desired background image */
+    background-color: green; /* put desired background color here, for if image is unavailable */
     color: white; /* put desired text color here */
     text-align: center;
     padding-top: 80px;
