@@ -1,9 +1,10 @@
 var viewer = OpenSeadragon({
     id: "seadragon-viewer",
-    prefixUrl: "openseadragon-bin-2.4.2/images/",
+    prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
     tileSources: {
-	type: 'image',
-	url: 'assets/image1.jpg',
-	buildPyramid: false
+    	type: 'image',
+    	url: 'assets/image1.jpg',
+    	buildPyramid: false
     }
+    // tileSources: ["assets/image1.jpg", "assets/image2.jpg"]
 });
