@@ -1,3 +1,38 @@
+// code to read XML file and get UUIDs
+
+// This is a string; maybe it needs to be some kind of "File" type instead, so that sourceXML represents the content rather than the filename?
+
+// var sourceXML = "http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a";
+
+// const fs = require('fs');
+// fs.readFile("http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a", 'utf-8', (err, data) => {
+//     if(err) throw err;
+//     console.log(data);
+// })
+
+// This code is not storing anything into the variable sourceXML.  Maybe the readFile function only works for Node.js rather than in a web browser?  It does not work when I input a local file instead of the OCHRE link either.
+
+var sourceXML = "";
+function readFile() {
+    jQuery.get("http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a", function(sourceXML) {
+	console.log(sourceXML);
+    });
+}
+// this is not working, no data is getting stored into sourceXML; I will come back to this later
+alert(sourceXML);
+
+// if(window.DOMParser){
+//     // code for modern browsers
+//     parser = new DOMParser();
+// }
+
+// Commented out the below part temporarily because it was throwing an error
+
+// var parser = new DOMParser();
+// var xml = parser.parseFromString(sourceXML, "text/xml");
+
+// code to display images
+
 var viewer = OpenSeadragon({
     id: "seadragon-viewer",
     prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
