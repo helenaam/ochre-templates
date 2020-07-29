@@ -11,18 +11,26 @@ function loadXML(){
   };
   xhttp.open("GET", "http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a", true);
   xhttp.send();
-  console.log(`xhttp is ${xhttp}`);
 
   function loadXMLresponse(xml){
     var uuids = [];
     var xmlDoc = xml.responseXML;
-    console.log(`xmlDoc is ${xmlDoc}`);
     var testVar = xmlDoc.getElementsByTagName("resource");
-    console.log(`testVar is ${testVar}; ${testVar.length}`);
     for (var i=0; i < testVar.length; i++){
-      uuids.push(testVar[i].getAttribute('uuid'));
+      var iter = i;
+      var uuid = testVar[i].getAttribute('uuid');
+      //create a new column div for each image (this will need to be tweaked to handle many images.)
+      var newDiv = document.createElement("div");
+      newDiv.setAttribute('class', 'column');
+      newDiv.setAttribute('id', 'imgDiv'+iter);
+      document.getElementById("previewGallery").appendChild(newDiv);
+      //create a new img element inside each div
+      var newImg = document.createElement("img");
+      newImg.setAttribute('src', 'http://pi.lib.uchicago.edu/1001/org/ochre/'+uuid+'&preview');
+      newImg.setAttribute('style', 'width: 50%');
+      newImg.setAttribute('onclick', 'tabGallery(this)');
+      document.getElementById('imgDiv'+iter).appendChild(newImg);
     };
-    console.log(`uuid list is ${uuids}`);
   }
 }
 
