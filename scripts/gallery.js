@@ -12,14 +12,26 @@
 
 // This code is not storing anything into the variable sourceXML.  Maybe the readFile function only works for Node.js rather than in a web browser?  It does not work when I input a local file instead of the OCHRE link either.
 
-var sourceXML = "";
-function readFile() {
-    jQuery.get("http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a", function(sourceXML) {
-	console.log(sourceXML);
-    });
-}
+// var sourceXML = "";
+// function readFile() {
+//     jQuery.get("http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a", function(sourceXML) {
+// 	console.log(sourceXML);
+//     });
+// }
 // this is not working, no data is getting stored into sourceXML; I will come back to this later
-alert(sourceXML);
+// alert(sourceXML);
+
+var connect = new XMLHttpRequest();
+connect.open("GET", "http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a", false);
+connect.setRequestHeader("content-type", "text/xml");
+connect.send(null);
+var sourceXML = connect.responseXML;
+var images = sourceXML.getElementsByTagName("items");
+for(var i = 0; i < images.children.length; i++){
+    uuids.push(items[i].getAttribute("uuid"));
+}
+
+
 
 // if(window.DOMParser){
 //     // code for modern browsers
