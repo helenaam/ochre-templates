@@ -1,0 +1,5 @@
+bootstrap/
+*~
+*.map
+styles/basic-template.scss
+.gitignore
