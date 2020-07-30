@@ -2,6 +2,20 @@ body, html {
     height: 100%;
 }
 
-.seadragon-viewer {
+.gallery-picker {
     margin-top: 51px;
+    text-align: center;
+}
+
+.gallery-picker h4 {
+    display: inline-block;
+    padding-right: 1%;
+}
+
+.gallery-picker a {
+    padding: 1%;
+}
+
+.seadragon-viewer {
+    /* margin-top: 51px; */
 }
