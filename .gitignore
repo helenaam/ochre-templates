@@ -1,5 +1,6 @@
+<<<<<<< HEAD
 bootstrap/
 *~
 *.map
 styles/basic-template.scss
-.gitignore
+.DS_Store
