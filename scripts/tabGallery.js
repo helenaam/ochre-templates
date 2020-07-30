@@ -13,7 +13,6 @@ function loadXML(){
   xhttp.send();
 
   function loadXMLresponse(xml){
-    var uuids = [];
     var xmlDoc = xml.responseXML;
     var testVar = xmlDoc.getElementsByTagName("resource");
     for (var i=0; i < testVar.length; i++){
