@@ -70,7 +70,7 @@ function prepareArray(uuids){
 }
 
 alert(uuids); // For some reason, it only works when I include this line
-//var tileSources = prepareArray(uuids);
+var tileSources = prepareArray(uuids);
 
 // I defined the url variable at the top of the file so that it is easier to find.  The rest of the code will go down here.
 
@@ -102,18 +102,18 @@ var viewer = OpenSeadragon({
     // 	// buildPyramid: false
     // }
 
-    tileSources: [
-	{
-	    type: 'image',
-	    url: 'http://ochre.lib.uchicago.edu/ochre?uuid=' + uuids[0] + '&image'
-	},
-	{
-	    type: 'image',
-	    url: 'http://ochre.lib.uchicago.edu/ochre/uuid=' + uuids[1] + '&image'
-	}
-    ]
-    
-    // tileSources
+    tileSources: tileSources
+
+    // [
+    // 	{
+    // 	    type: 'image',
+    // 	    url: 'http://ochre.lib.uchicago.edu/ochre?uuid=' + uuids[0] + '&image'
+    // 	},
+    // 	{
+    // 	    type: 'image',
+    // 	    url: 'http://ochre.lib.uchicago.edu/ochre/uuid=' + uuids[1] + '&image'
+    // 	}
+    // ]
     
     // [
     // 	{
