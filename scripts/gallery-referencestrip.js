@@ -9,6 +9,7 @@ var url4 = "http://ochre.lib.uchicago.edu/ochre?uuid=2fcd4cfe-8612-42c0-8ccd-ff9
 
 var uuids = [];
 var tiles = [];
+var viewer;
 
 function loadXML(link){
     var connect = new XMLHttpRequest();
@@ -48,7 +49,7 @@ function showImages(uuids){
     //alert(uuids); // For some reason, it only works when I include this line
     tiles = prepareArray(uuids);
 
-    var viewer = OpenSeadragon({
+    viewer = OpenSeadragon({
 	id: "seadragon-viewer",
 	prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
 	sequenceMode: true,
@@ -62,26 +63,42 @@ function showImages(uuids){
 }
 
 var galLink1 = document.getElementById("link1");
-galLink1.onclick = function() {
-    loadXML(url1);
-    //showImages(uuids);
-    return false;
-}
 var galLink2 = document.getElementById("link2");
-galLink2.onclick = function() {
-    loadXML(url2);
-    //showImages(uuids);
-    return false;
-}
 var galLink3 = document.getElementById("link3");
-galLink3.onclick = function() {
-    loadXML(url3);
-    //showImages(uuids);
+var galLink4 = document.getElementById("link4");
+galLink1.onclick = function() {
+    tiles = [];
+    uuids = [];
+    if(viewer){
+	viewer.destroy();
+    }
+    loadXML(url1);
     return false;
 }
-var galLink4 = document.getElementById("link4");
+galLink2.onclick = function() {
+    tiles = [];
+    uuids = [];
+    if(viewer){
+	viewer.destroy();
+    }
+    loadXML(url2);
+    return false;
+}
+galLink3.onclick = function() {
+    tiles = [];
+    uuids = [];
+    if(viewer){
+	viewer.destroy();
+    }
+    loadXML(url3);
+    return false;
+}
 galLink4.onclick = function() {
+    tiles = [];
+    uuids = [];
+    if(viewer){
+	viewer.destroy();
+    }
     loadXML(url4);
     return false;
 }
-
