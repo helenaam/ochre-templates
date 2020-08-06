@@ -3,9 +3,9 @@ var url1 = "http://ochre.lib.uchicago.edu/ochre?uuid=cc6a3b57-23de-f359-eed7-76a
 // Replace this URL with the URL for your second image hierarchy or set
 var url2 = "http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a";
 // Replace this URL with the URL for your third image hierarchy or set
-var url3 = "http://ochre.lib.uchicago.edu/ochre?uuid=4274aec7-b797-4585-9235-81857897cc47";  // This is the link with the TIFF files
+var url3 = "http://ochre.lib.uchicago.edu/ochre?uuid=4274aec7-b797-4585-9235-81857897cc47";
 // Replace this URL with the URL for your fourth image hierarchy or set
-var url4 = "http://ochre.lib.uchicago.edu/ochre?uuid=2fcd4cfe-8612-42c0-8ccd-ff9fa4ef351e";  // This is the Tiwanaku link
+var url4 = "http://ochre.lib.uchicago.edu/ochre?uuid=2fcd4cfe-8612-42c0-8ccd-ff9fa4ef351e";
 
 var uuids = [];
 var tiles = [];
@@ -51,11 +51,8 @@ function showImages(uuids){
     var viewer = OpenSeadragon({
 	id: "seadragon-viewer",
 	prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
-	collectionMode: true,
-	collectionRows: 3,
-	collectionTileSize: 1024,
-	collectionTileMargin: 256,
-	collectionLayout: 'vertical',
+	sequenceMode: true,
+	showReferenceStrip: true,
 	// placeholderFillStyle: "#a67e58",
 	showZoomControl: true,
 	showHomeControl: true,

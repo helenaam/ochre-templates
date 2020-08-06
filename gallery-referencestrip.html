@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/basic-template.css" type="text/css">
-    <title>Webpage title here</title> <!-- put your webpage title here -->
+    <link rel="stylesheet" href="styles/gallery.css" type="text/css">
+    <title>Gallery - Webpage title here</title> <!-- put your webpage title here -->
   </head>
   <body>
 
@@ -24,7 +25,7 @@
     	</div>
 	<div class="collapse navbar-collapse" id="navbarCollapse">
     	  <ul class="nav navbar-nav">
-    	    <li class="active"><a href="#">Home</a></li>
+    	    <li><a href="index.html">Home</a></li>
 	    <li class="dropdown">
 	      <!-- replace "Menu 1" with name of first dropdown menu -->
 	      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1<span class="caret"></span></a>
@@ -69,7 +70,7 @@
     	    <!-- <li><a href="#">Link 3</a></li> -->
 	    <li><a href="about.html">About</a></li>
 	    <li><a href="gallery.html">Gallery A</a></li>
-	    <li><a href="gallery-referencestrip.html">Gallery B</a></li>
+	    <li class="active"><a href="gallery-referencestrip.html">Gallery B</a></li>
 	    <li><a href="contact.html">Contact</a></li>
     	  </ul>
 	</div>
@@ -78,19 +79,18 @@
 
     <!-- navbar code ends here -->
 
-    <div class="bg">
-      
-      <div class="container">
-	<h1>Project Title</h1> <!-- put desired title for the homepage here -->
-      </div>
-      <div class="text">
-	<p>Project description goes here</p>
-      </div>
-      
+    <div class="gallery-picker">
+      <h4>View Gallery:</h4>
+      <a href="#" id="link1">Gallery 1</a>
+      <a href="#" id="link2">Gallery 2</a>
+      <a href="#" id="link3">Gallery 3</a>
+      <a href="#" id="link4">Gallery 4</a>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <div class="seadragon-viewer" id="seadragon-viewer" style="height: 600px;"></div>
+    <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+    <script src="scripts/gallery-referencestrip.js"></script>
+
   </body>
 </html>
+
