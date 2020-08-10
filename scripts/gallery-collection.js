@@ -3,9 +3,9 @@ var url1 = "http://ochre.lib.uchicago.edu/ochre?uuid=cc6a3b57-23de-f359-eed7-76a
 // Replace this URL with the URL for your second image hierarchy or set
 var url2 = "http://ochre.lib.uchicago.edu/ochre?uuid=e59a5d19-0ea8-49c4-a814-05c6674f0f0a";
 // Replace this URL with the URL for your third image hierarchy or set
-var url3 = "http://ochre.lib.uchicago.edu/ochre?uuid=4274aec7-b797-4585-9235-81857897cc47";  // This is the link with the TIFF files
+var url3 = "http://ochre.lib.uchicago.edu/ochre?uuid=4274aec7-b797-4585-9235-81857897cc47";
 // Replace this URL with the URL for your fourth image hierarchy or set
-var url4 = "http://ochre.lib.uchicago.edu/ochre?uuid=2fcd4cfe-8612-42c0-8ccd-ff9fa4ef351e";  // This is the Tiwanaku link
+var url4 = "http://ochre.lib.uchicago.edu/ochre?uuid=2fcd4cfe-8612-42c0-8ccd-ff9fa4ef351e";
 
 var uuids = [];
 var tiles = [];
@@ -68,6 +68,7 @@ var galLink1 = document.getElementById("link1");
 var galLink2 = document.getElementById("link2");
 var galLink3 = document.getElementById("link3");
 var galLink4 = document.getElementById("link4");
+// Copy and paste the lines above to add more gallery links
 galLink1.onclick = function() {
     tiles = [];
     uuids = [];
@@ -95,6 +96,7 @@ galLink3.onclick = function() {
     loadXML(url3);
     return false;
 }
+// Copy and paste the function below to add more gallery links
 galLink4.onclick = function() {
     tiles = [];
     uuids = [];

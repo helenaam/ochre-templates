@@ -4,3 +4,4 @@ bootstrap/
 *.map
 styles/basic-template.scss
 .DS_Store
+README.pdf

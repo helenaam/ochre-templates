@@ -66,6 +66,7 @@ var galLink1 = document.getElementById("link1");
 var galLink2 = document.getElementById("link2");
 var galLink3 = document.getElementById("link3");
 var galLink4 = document.getElementById("link4");
+// Copy and paste the lines above to add more gallery links
 galLink1.onclick = function() {
     tiles = [];
     uuids = [];
@@ -93,6 +94,7 @@ galLink3.onclick = function() {
     loadXML(url3);
     return false;
 }
+// Copy and paste the function below to add more gallery links
 galLink4.onclick = function() {
     tiles = [];
     uuids = [];

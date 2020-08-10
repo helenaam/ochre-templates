@@ -6,6 +6,12 @@ body, html {
     margin-top: 51px;
     padding: 20px;
     text-align: center;
+    /* color: white; */
+    /* If you would like to change the color of the title text, uncomment the line above and replace "white" with your desired color. */
+    /* font-family:  */
+    /* If you would like to change the font of the title, uncomment the line above and add your desired font. */
+    /* font-weight:  */
+    /* If you would like to change the font weight (e.g. normal, bold, etc.) of the title, uncomment the line above and add your desired font weight. */
 }
 
 .row-eq-height {
@@ -13,6 +19,11 @@ body, html {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+}
+
+.bg {
+    height: 100%;
+    background-color: white; /* replace this with your desired background color for the page */
 }
 
 .col-sm-10 {
@@ -23,31 +34,34 @@ body, html {
 }
 
 .col-sm-7 {
-    background-image: url("../assets/image2.jpg");
+    background-image: url("../assets/image2.jpg"); /* replace this with your desired image (displays next to the contact information) */
+    background-color: lightgreen; /* replace this with the color you would like to display in this spot if the image is unavailable */
     height: 100%;
 }
 
 .col-sm-5 {
-    background-color: lightgreen;
+    background-color: lightgreen; /* replace this with your desired background color for the contact information box */
+    /* color: white; */
+    /* If you would like to change the text color of the contact information, uncomment the line above and replace "white" with your desired text color. */
     padding-left: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
     color: black;
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
 }
 
 .col-sm-5 h4 {
     font-size: 20px;
+    /* font-family:  */
+    /* If you would like to change the font of the contact info headings ("Email," "Phone," "Office"), uncomment the line above and add your desired font. */
+    /* font-weight:  */
+    /* If you would like to change the font weight (e.g. normal, bold, etc.) of the contact info headings, uncomment the line above and add your desired font weight. */
 }
 
 .col-sm-5 p {
     text-indent: 10%;
     font-size: 16px;
+    /* font-family:  */
+    /* If you would like to change the font of the contact information, uncomment the line above and add your desired font. */
+    /* font-weight:  */
+    /* If you would like to change the font weight (e.g. normal, bold, etc.) of the contact information, uncomment the line above and add your desired font weight. */
 }
-
-/* .flex-row { */
-/*     justify-content: center; */
-/* } */

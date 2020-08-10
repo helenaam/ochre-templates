@@ -10,7 +10,6 @@ body, html {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    /* font-size: 48px; */
 }
 
 .title h1 {
@@ -22,8 +21,25 @@ body, html {
     background-color: white; /* replace this with desired background color for body of page */
 }
 
+.col-sm-8 h3 {
+    /* font-size:  */
+    /* If you would like to change the font size for the section titles, uncomment the line above and add your desired font size. */
+    /* color: white; */
+    /* If you would like to change the text color for the section titles, uncomment the line above and replace with your desired text color. */
+    /* font-family:  */
+    /* If you would like to change the font for the section titles, uncomment the line above and add your desired font. */
+    /* font-weight:  */
+    /* If you would like to change the font weight (e.g. normal, bold, etc.) for the section titles, uncomment the line above and add your desired font weight. */
+}
+
 .col-sm-8 p {
     font-size: 16px; /* replace this with desired font size for body text */
+    /* color: white; */
+    /* If you would like to change the text color for the body of every section, uncomment the line above and replace with your desired text color. */
+    /* font-family:  */
+    /* If you would like to change the font for the body text of every section, uncomment the line above and add your desired font. */
+    /* font-weight:  */
+    /* If you would like to change the font weight (e.g. normal, bold, etc.) for the body text of every section, uncomment the line above and add your desired font weight. */
 }
 
 .row {
@@ -40,22 +56,4 @@ img {
     margin-top: 10px;
     width: 85%;
     height: auto;
-}
-
-/* settings that only apply to screen size small or bigger */
-@media (min-width: 576px) {
-}
-
-/* settings that only apply to screen size medium or bigger */
-@media (min-width: 768px) {
-}
-
-/* settings that only apply to screen size large or bigger */
-@media (min-width: 992px) {
-    
-}
-
-/* settings that only apply to screen size xl or bigger */
-@media (min-width: 1200px) {
-
 }

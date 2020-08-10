@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    background-color: burlywood; // replace this with your desired page background color
+    background-color: burlywood; /* replace this with your desired page background color */
 }
 
 .gallery-picker {
@@ -11,18 +11,20 @@ body, html {
 .gallery-picker h4 {
     display: inline-block;
     padding-right: 1%;
+    /* color: white; */
+    /* If you would like to change the text color of the "View Gallery:" text, uncomment the line above and replace "white" with your desired color. */
 }
 
 .gallery-picker a {
     padding: 1%;
+    /* color: black; */
+    /* If you would like to change the color of the links in the gallery picker, uncomment the line above and replace "black" with your desired color. */
 }
 
 .seadragon-viewer {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    /* width: 100%; */
-    /* margin-top: 51px; */
 }
 
 @media (min-width: 992px) {

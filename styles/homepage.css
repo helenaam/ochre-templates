@@ -5,7 +5,7 @@ body, html {
 /* default settings; these settings are used unless overridden by settings for specific screen size */
 .bg {
     margin-top: 10%;
-    background-color: tomato; /* replace "tomato" with your desired background color for small screens */
+    background-color: pink; /* replace "pink" with your desired background color for small screens */
     height: 100%;
 }
 
@@ -24,6 +24,9 @@ body, html {
     color: black; /* replace "black" with your desired text color for description */
     font-family: sans-serif; /* replace with your desired font for description */
     font-size: 16px; /* replace with desired font size for description */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
 }
 
 /* settings that only apply to screen size small or bigger */
@@ -42,26 +45,4 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: cover;
     }
-}
-
-/* settings that only apply to screen size large or bigger */
-@media (min-width: 992px) {
-    /* .bg { */
-    /* 	margin-top: 4%; */
-    /* 	background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=03f3209b-291d-442b-88f2-f9c064fea259&image"); /\* replace this with image for your project *\/ */
-    /* 	background-position: center; */
-    /* 	background-repeat: no-repeat; */
-    /* 	background-size: cover; */
-    /* } */
-}
-
-/* settings that only apply to screen size xl */
-@media (min-width: 1200px) {
-    /* .bg { */
-    /* 	margin-top: 4%; */
-    /* 	background-image: url("http://ochre.lib.uchicago.edu/ochre?uuid=03f3209b-291d-442b-88f2-f9c064fea259&image"); /\* replace this with image for your project *\/ */
-    /* 	background-position: center; */
-    /* 	background-repeat: no-repeat; */
-    /* 	background-size: cover; */
-    /* } */
 }
