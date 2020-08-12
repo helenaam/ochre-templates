@@ -46,7 +46,6 @@ function prepareArray(uuids){
 }
 
 function showImages(uuids){
-    //alert(uuids); // For some reason, it only works when I include this line
     tiles = prepareArray(uuids);
 
     viewer = OpenSeadragon({
@@ -54,7 +53,6 @@ function showImages(uuids){
 	prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
 	sequenceMode: true,
 	showReferenceStrip: true,
-	// placeholderFillStyle: "#a67e58",
 	showZoomControl: true,
 	showHomeControl: true,
 	showFullPageControl: true,

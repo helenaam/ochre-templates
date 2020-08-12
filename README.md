@@ -165,3 +165,10 @@ If you are using more than 4 links, go to the bottom of the page and add a line 
 
 #### .gallery-picker a:
 - **color:** This specifies the color of the links in the gallery picker.  If you would like to change it, uncomment the "color:" line and replace "black" with your desired color.
+
+
+## OpenSeaDragon
+
+### Display viewer with multiple TileSources
+
+
