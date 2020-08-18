@@ -6,7 +6,7 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="styles/hotspots.css" type="text/css"> -->
-    <title>Gallery - Webpage title here</title> <!-- put your webpage title here -->
+    <title>Image - Webpage title here</title> <!-- put your webpage title here -->
   </head>
   <body>
 
@@ -81,9 +81,17 @@
     <!-- navbar code ends here -->
 
     <script src="scripts/hotspots.js"></script>
-    <img src="http://pi.lib.uchicago.edu/1001/org/ochre/46e358d4-9d38-4aa4-b54c-d11a78b4e35c&image" usemap="#hotspots">
+    <img src="http://pi.lib.uchicago.edu/1001/org/ochre/46e358d4-9d38-4aa4-b54c-d11a78b4e35c&image" usemap="#hotspots" width="80%">
 
     <map name="hotspots" id="imageMap">
     </map>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="image-map-resize/imageMapResizer.min.js"></script>
+    <script type="text/javascript">
+      $(window).on('load', function() {
+	  $('map').imageMapResize();
+      });
+    </script>
   </body>
 </html>
