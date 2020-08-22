@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+}
+
+img {
+    /* width: 55%; */
+    /* margin-left: 5%; */
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+}
+
+/* .col-md-4 { */
+/*     background-color: green; */
+/* } */
+
+/* .row { */
+/*     height: 100%; */
+/* } */
+
+/* .info { */
+/*     width: 33%; */
+/*     display:  */
+/* } */
