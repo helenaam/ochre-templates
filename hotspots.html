@@ -84,30 +84,28 @@
 
     <div class="container">
       <div class="row row-eq-height">
-	<!-- <div class="col-md-1"></div> -->
 	<div class="col-md-8">	  
-	  <img src="http://pi.lib.uchicago.edu/1001/org/ochre/46e358d4-9d38-4aa4-b54c-d11a78b4e35c&image" width="100%" usemap="#hotspots">
+	  <img src="http://pi.lib.uchicago.edu/1001/org/ochre/46e358d4-9d38-4aa4-b54c-d11a78b4e35c&image" width="100%" usemap="#hotspots" class="map">
 	</div>
-	<!-- <div class="col-md-1"></div> -->
 	<div class="col-md-4" id="results-page">
 	</div>
-	<!-- <div class="col-md-1"></div> -->
       </div>
     </div>
 
     <map name="hotspots" id="imageMap">
     </map>
 
-    <!-- <script type="text/javascript"> -->
-      
-    <!-- </script> -->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
     <script type="text/javascript" src="image-map-resize/imageMapResizer.min.js"></script>
     <script type="text/javascript">
+      $(function() {
+	  $('.map').maphilight(); 
+      });
       $(window).on('load', function() {
 	  $('map').imageMapResize();
       });
     </script>
+    
   </body>
 </html>
