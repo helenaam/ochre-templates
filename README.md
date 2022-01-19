@@ -1,3 +1,5 @@
+# DEPRECATED—see ochre-web-templates
+
 # ochre-templates
 
 This repository contains functioning templates for web pages designed to allow you to easily create a website for your project.  These templates are specifically designed to pull images and data dynamically from the OCHRE database, so the website will be automatically updated along with the information in the database.
@@ -165,10 +167,4 @@ If you are using more than 4 links, go to the bottom of the page and add a line 
 
 #### .gallery-picker a:
 - **color:** This specifies the color of the links in the gallery picker.  If you would like to change it, uncomment the "color:" line and replace "black" with your desired color.
-
-
-## OpenSeaDragon
-
-### Display viewer with multiple TileSources
-
 
