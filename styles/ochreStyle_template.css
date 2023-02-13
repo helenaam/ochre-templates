@@ -1,0 +1,123 @@
+/* Use this CSS style sheet to override default values in published OCHRE data or add new values. */
+/* Most elements in documents published from OCHRE will have a unique id and a useful class. */
+/* Avoid using an element selector in favor of an #id or .class selector. */
+/* See https://developer.mozilla.org/en-US/docs/Learn/CSS */
+/* Consult with the OCHRE Data Service on naming this file and declaring it in your OCHRE project. */
+
+/* Example on how to suppress content */
+/* Use display: none to suppress content. Note: the content will still be accessible in the underlying HTML. */
+/*
+.noteAuthor {
+  display: none;
+}
+*/
+
+/* nav */
+nav {
+  background-color: #800000;
+}
+
+/* general */
+/* link style options: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links */
+a {
+  text-decoration: none;
+  color: #800000;
+  display: block;
+}
+
+hr {
+  height: 3px;
+  color: #800000;
+}
+
+/* this creates the colored heading */
+@media only screen and (min-width: 990px) {
+  #subHead {
+    background: linear-gradient(135deg, #800000 90%, white 10%);
+  }
+}
+
+/* controls the color and size of the project name in the heading */
+#splashTitle {
+  color: white;
+  font-size: 150%;
+}
+
+/* headings */
+h1, #projectName {
+  color: #800000;
+}
+
+/* increase or decrese vertical spacing in section headings */
+h4 {
+  padding-top: 5px;
+}
+
+/* global selectors */
+#globalNodes {
+  padding-top: 10px;
+}
+
+/* style the size of item name */
+.identificationXsl {
+  font-size: 150%;
+}
+
+.globalHeading {
+  font-size: 125%;
+  font-weight: 500;
+  padding-top: 2%;
+}
+
+/* style the color of property variable labels */
+.propertyVariable {
+  color: #767676;
+}
+
+/* style the weight of property values */
+.propertyValue {
+  font-weight: 600;
+}
+
+/* style a resource primary image */
+#primaryImg {
+  width: 20%;
+  height: auto;
+}
+
+/* style list features */
+ul {
+  list-style: none;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+li {
+  line-height: normal;
+  margin-top: 1.5%;
+}
+
+/* style map features */
+#map {
+  float: right;
+  margin: 0 0 10px 10px;
+  height: 50vh;
+  width: 100%;
+  border: solid;
+  border-width: 2px;
+  border-color: #d6d6ce;
+}
+
+/* style footer features */
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #ebe8e8;
+  font-size: smaller;
+  color: #767676;
+}
+
+a.footerLink {
+  display: inline;
+}
+
